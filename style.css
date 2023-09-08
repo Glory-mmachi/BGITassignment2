@@ -10,12 +10,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   color: gray;
   font-size: clamp(15px, 6vw, 35px);
 }
 
+/* used grid for placement of webpage content */
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -25,6 +25,8 @@ body {
     "main aside"
     "footer footer";
 }
+
+/* header styling */
 header {
   grid-area: header;
   background-color: var(--header-color);
@@ -41,6 +43,8 @@ h1::first-letter {
 h1::after {
   content: "💻";
 }
+
+/* main styling */
 main {
   text-align: center;
 }
@@ -50,6 +54,7 @@ main img {
   filter: drop-shadow(2px 2px 10px rgb(144, 138, 138));
 }
 
+/* aside sytyling */
 aside p {
   padding-inline: 50px;
   padding-top: 30px;
@@ -60,6 +65,7 @@ aside p {
   align-items: center;
 }
 
+/* footer styling */
 footer {
   grid-area: footer;
   text-align: center;
@@ -68,12 +74,14 @@ footer {
   font-size: 20px;
 }
 
+/* screens less than 800px */
 @media (max-width: 800px) {
   h1::after {
     display: none;
   }
 }
 
+/* screens less than 680px */
 @media (max-width: 680px) {
   .container {
     display: grid;
