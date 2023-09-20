@@ -1,0 +1,42 @@
+/* universal styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body style */
+body {
+  background-color: lightblue;
+  text-align: center;
+}
+
+/* navbar styling */
+nav ul {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+a {
+  color: rgb(89, 86, 86);
+  text-decoration: none;
+}
+li {
+  padding: 10px 40px;
+  list-style-type: none;
+  border-radius: 5px;
+}
+
+/* image styling */
+img{
+    margin-top: 20px;
+    width: 300px;
+    border-radius: 15px;
+}
+
+/* screens below 600px */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
