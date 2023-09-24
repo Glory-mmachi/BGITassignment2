@@ -1,0 +1,31 @@
+.container{
+    max-width: 500px;
+    height: 600px;
+    margin: 20px auto;
+    overflow-y: hidden;
+}
+.card{
+    box-shadow:  2px 2px 10px gray;
+    background-color: rgb(224, 220, 220);
+}
+.card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.modal-content {
+  background-color:  rgb(114, 53, 63);
+  color: pink;
+}
+.btn {
+  background-color: rgb(222, 132, 147);
+  color: white;
+  outline: none;
+  border: none;
+  box-shadow: 4px 4px 10px rgb(189, 152, 152);
+}
+.btn:hover {
+  background-color: white;
+  color: rgb(114, 53, 63);
+}
