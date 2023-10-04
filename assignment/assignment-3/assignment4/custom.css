@@ -49,7 +49,7 @@ p {
   background-color: #2e022e;
   border-color: #2e022e;
   outline-color: #2e022e;
-  transition: all 2s ease-in;
+  transition: all 1s ease-in;
 }
 
 .btn:hover {
@@ -72,8 +72,10 @@ p {
 }
 .card-img-top {
   height: 250px;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   transition: all 1s;
 }
 
@@ -83,6 +85,7 @@ p {
 
 .card {
   overflow: hidden;
+  margin-top: 10px;
 }
 
 h5 {
@@ -105,5 +108,4 @@ footer {
     font-size: 40px;
   }
 }
-
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=custom.css.map */
