@@ -72,10 +72,8 @@ p {
 }
 .card-img-top {
   height: 250px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
   transition: all 1s;
 }
 
@@ -108,4 +106,6 @@ footer {
     font-size: 40px;
   }
 }
+
+
 /*# sourceMappingURL=custom.css.map */
