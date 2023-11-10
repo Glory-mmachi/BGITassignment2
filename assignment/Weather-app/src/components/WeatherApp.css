@@ -33,6 +33,13 @@
   background: #ebfffc;
   border-radius: 40px;
   cursor: pointer;
+  transition: all 1.5s;
+}
+.search-icon:hover{
+  scale: 0.9;
+}
+.search-icon:active{
+  background-color: #6ba7cc;
 }
 .weather-image {
   margin-top: 29px;

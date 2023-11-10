@@ -9,7 +9,6 @@ import rain_icon from "../Assets/rain.png";
 import snow_icon from "../Assets/snow.png";
 import wind_icon from "../Assets/wind.png";
 
-
 export default function WeatherApp() {
   let api_key = "f9f9c08f185e9c797becfeb1bc14163f";
   const [wIcon, setWIcon] = useState(cloud_icon);
@@ -88,7 +87,8 @@ export default function WeatherApp() {
       return;
     } else {
       return (temprature.innerHTML = setConvertTemp(
-        Number(temprature[0].innerHTML.split("°")[0]) * 1.8 + 32 + "F"
+        Math.floor(Number(temprature[0].innerHTML.split("°")[0]) * 1.8 + 32) +
+          "F"
       ));
     }
   };
